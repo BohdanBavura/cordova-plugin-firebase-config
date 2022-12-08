@@ -1,0 +1,75 @@
+{
+  "_from": "cordova-plugin-firebase-config",
+  "_id": "cordova-plugin-firebase-config@7.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-ThR3m1mFWpjvIjO9petTt2XPRFxEUZ96nijQrz9ywuHBYMmO3rvx3zfbF0VKBUuyhE3Rl6T/U0p8jJfJIq/peg==",
+  "_location": "/cordova-plugin-firebase-config",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-firebase-config",
+    "name": "cordova-plugin-firebase-config",
+    "escapedName": "cordova-plugin-firebase-config",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebase-config/-/cordova-plugin-firebase-config-7.0.3.tgz",
+  "_shasum": "e4d12a98059014fd80ff10aa2647eaf8d485f221",
+  "_spec": "cordova-plugin-firebase-config",
+  "_where": "D:\\MoonMana\\DynamonsWorld\\Dynamons-World",
+  "author": {
+    "name": "Maksim Chemerisuk",
+    "email": "chemerisuk@gmail.com",
+    "url": "https://github.com/chemerisuk"
+  },
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-config/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-firebase-config",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for Firebase Remote Config",
+  "devDependencies": {
+    "typedoc": "^0.23.9",
+    "typedoc-plugin-markdown": "^3.13.4"
+  },
+  "funding": "https://github.com/chemerisuk/cordova-plugin-firebase-config?sponsor=1",
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-config#readme",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "remote config",
+    "analytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-firebase-config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-config.git"
+  },
+  "scripts": {
+    "docs": "typedoc && perl -i -pe 's/README.md#/#/g' ./docs/README.md",
+    "postdocs": "perl -i -0pe 's/(<!-- TypedocGenerated -->).*/$1\n\n/gms' README.md && cat ./docs/README.md >> README.md",
+    "postversion": "git push && git push --tags",
+    "predocs": "tsc www/* --declaration --allowJs --checkJs --lib es2015,dom --emitDeclarationOnly --outDir types",
+    "preversion": "npm run docs && rm -rf docs",
+    "version": "perl -i -pe 's/(version=)\"\\d+\\.\\d+\\.\\d+\"/$1\"'$npm_package_version'\"$2/' plugin.xml && git add ."
+  },
+  "types": "./types/index.d.ts",
+  "version": "7.0.3"
+}
